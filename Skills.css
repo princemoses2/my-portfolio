@@ -66,221 +66,170 @@
     border-radius:15px;
     border-left:6px solid #28a745;
 }
-/* ===========================
-   EXTRA LARGE DEVICES (1400px and below)
-=========================== */
+/* ==========================================
+   RESPONSIVE MEDIA QUERIES
+   Place at the END of your CSS file
+========================================== */
 
+/* Extra Large Devices */
 @media (max-width:1400px){
 
-    .container{
+    .intro,
+    .closing{
         width:90%;
-        margin:auto;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .skill-box{
+        width:90%;
+        margin-left:auto;
+        margin-right:auto;
     }
 
 }
 
-
-/* ===========================
-   LARGE LAPTOPS (1200px and below)
-=========================== */
-
+/* Large Laptops */
 @media (max-width:1200px){
 
-    .container{
-        width:92%;
+    .intro,
+    .closing,
+    .skill-box{
+        width:95%;
     }
 
 }
 
-
-/* ===========================
-   TABLETS (992px and below)
-=========================== */
-
+/* Tablets */
 @media (max-width:992px){
 
     body{
         overflow-x:hidden;
     }
 
-    nav{
-        flex-direction:column;
-        align-items:center;
+    .intro{
+        width:95%;
+        font-size:17px;
     }
 
-    section{
-        padding:60px 25px;
+    .skill-box{
+        width:95%;
+        padding:22px;
     }
 
-    h1{
-        font-size:2.5rem;
+    .skill-box h2{
+        font-size:24px;
     }
 
-    h2{
-        font-size:2rem;
+    .skill-box li{
+        font-size:16px;
     }
 
-    p{
-        font-size:1rem;
+    .closing{
+        width:95%;
+        font-size:17px;
+        padding:22px;
     }
 
 }
 
-
-/* ===========================
-   SMALL TABLETS (768px and below)
-=========================== */
-
+/* Small Tablets */
 @media (max-width:768px){
 
     body{
         overflow-x:hidden;
     }
 
-    .container{
+    .intro{
         width:95%;
-        margin:auto;
-    }
-
-    section{
-        padding:50px 20px;
-    }
-
-    img,
-    video{
-        max-width:100%;
-        height:auto;
-        display:block;
-    }
-
-    h1{
-        font-size:2rem;
+        font-size:16px;
+        padding:0 10px;
         text-align:center;
     }
 
-    h2{
-        font-size:1.6rem;
+    .skill-box{
+        width:95%;
+        padding:20px;
+    }
+
+    .skill-box h2{
+        font-size:22px;
         text-align:center;
     }
 
-    h3{
-        text-align:center;
+    .skill-box ul{
+        padding-left:20px;
     }
 
-    p{
-        font-size:1rem;
-        text-align:center;
+    .skill-box li{
+        font-size:16px;
     }
 
-    button{
-        width:100%;
+    .closing{
+        width:95%;
+        padding:20px;
+        font-size:16px;
     }
 
-    input,
-    textarea,
-    select{
-        width:100%;
-        box-sizing:border-box;
+}
+
+/* Mobile Phones */
+@media (max-width:576px){
+
+    .intro{
+        width:98%;
+        font-size:15px;
+        line-height:1.7;
     }
 
-    form{
-        width:100%;
+    .skill-box{
+        width:98%;
+        padding:18px;
     }
 
-    footer{
-        padding:30px 20px;
-        text-align:center;
+    .skill-box h2{
+        font-size:20px;
     }
 
-    footer p{
+    .skill-box ul{
+        padding-left:18px;
+    }
+
+    .skill-box li{
         font-size:15px;
     }
 
-    footer a{
-        display:block;
-        margin:10px 0;
-    }
-
-    .social-icons{
-        display:flex;
-        justify-content:center;
-        gap:15px;
-        flex-wrap:wrap;
+    .closing{
+        width:98%;
+        font-size:15px;
+        padding:18px;
     }
 
 }
 
-
-/* ===========================
-   MOBILE PHONES (576px and below)
-=========================== */
-
-@media (max-width:576px){
-
-    body{
-        overflow-x:hidden;
-    }
-
-    h1{
-        font-size:1.8rem;
-    }
-
-    h2{
-        font-size:1.4rem;
-    }
-
-    h3{
-        font-size:1.2rem;
-    }
-
-    p{
-        font-size:0.95rem;
-    }
-
-    img,
-    video{
-        width:100%;
-        height:auto;
-    }
-
-    button{
-        width:100%;
-        padding:12px;
-    }
-
-    input,
-    textarea,
-    select{
-        width:100%;
-    }
-
-    footer{
-        padding:20px 15px;
-    }
-
-}
-
-
-/* ===========================
-   VERY SMALL PHONES (400px and below)
-=========================== */
-
+/* Very Small Phones */
 @media (max-width:400px){
 
-    h1{
-        font-size:1.5rem;
-    }
-
-    h2{
-        font-size:1.2rem;
-    }
-
-    p{
-        font-size:0.9rem;
-    }
-
-    button{
+    .intro{
         font-size:14px;
     }
 
+    .skill-box{
+        padding:15px;
+    }
+
+    .skill-box h2{
+        font-size:18px;
+    }
+
+    .skill-box li{
+        font-size:14px;
+    }
+
+    .closing{
+        font-size:14px;
+        padding:15px;
+    }
+
 }
+
