@@ -94,7 +94,7 @@ p{   padding-left: 40px;
   position:absolute;
   top: 380px;     
   right: 30px;   
- box-shadow:0 0 40px rgba(59,130,246,.5);
+ box-shadow:0 0 40px #28a745;
  z-index: 1;
 
 }
