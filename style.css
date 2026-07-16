@@ -503,3 +503,51 @@ margin-top: 50px;
     }
 
 }
+/* ==========================
+   MOBILE FIX FOR HOME PAGE
+========================== */
+
+@media (max-width:768px){
+
+    .h-p{
+        margin-top:150px;
+        font-size:32px;
+        padding-left:0;
+    }
+
+    .h-n{
+        font-size:28px;
+        margin-top:15px;
+    }
+
+    .p-sec{
+        margin-top:30px;
+    }
+
+}
+
+@media (max-width:576px){
+
+    .h-p{
+        margin-top:170px;
+        font-size:26px;
+    }
+
+    .h-n{
+        font-size:22px;
+    }
+
+}
+
+@media (max-width:400px){
+
+    .h-p{
+        margin-top:180px;
+        font-size:22px;
+    }
+
+    .h-n{
+        font-size:18px;
+    }
+
+}
