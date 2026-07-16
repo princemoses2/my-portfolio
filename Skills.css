@@ -3,315 +3,7 @@
     padding: 0px;
     box-sizing: border-box;
 }
-/* Large screens (Desktops) */
-@media (max-width: 1200px) {
 
-}
-
-/* Tablets */
-@media (max-width: 992px) {
-
-}
-
-/* Small tablets */
-@media (max-width: 768px) {
-
-    body{
-        overflow-x: hidden;
-    }
-
-    img,
-    video{
-        max-width: 100%;
-        height: auto;
-    }
-
-    h1{
-        font-size: 2rem;
-    }
-
-    h2{
-        font-size: 1.7rem;
-    }
-
-    p{
-        font-size: 1rem;
-    }
-
-    .container{
-        width: 90%;
-        margin: auto;
-    }
-
-    nav{
-        flex-direction: column;
-    }
-
-    section{
-        padding: 50px 20px;
-    }
-}
-
-/* Mobile phones */
-@media (max-width: 576px) {
-
-    body{
-        overflow-x: hidden;
-    }
-
-    h1{
-        font-size: 1.6rem;
-    }
-
-    h2{
-        font-size: 1.3rem;
-    }
-
-    p{
-        font-size: 0.95rem;
-    }
-
-    img,
-    video{
-        width: 100%;
-        height: auto;
-    }
-
-    button{
-        width: 100%;
-    }
-
-    .container{
-        width: 95%;
-    }
-
-    *{
-        max-width: 100%;
-    }
-}
-@media (max-width: 768px) {
-
-    footer{
-        padding: 20px;
-        text-align: center;
-    }
-
-    footer a{
-        display: block;
-        margin: 10px 0;
-        font-size: 16px;
-    }
-
-    footer p{
-        font-size: 14px;
-    }
-
-    footer .social-icons{
-        display: flex;
-        justify-content: center;
-        gap: 15px;
-        flex-wrap: wrap;
-    }
-}
-@media (max-width:768px){
-
-    form{
-        width:100%;
-    }
-
-    input,
-    textarea,
-    select{
-        width:100%;
-        box-sizing:border-box;
-        margin-bottom:15px;
-    }
-
-    button{
-        width:100%;
-    }
-}
-.navbar {
-    background-color:green;
-    padding: 25px;
-    position: fixed;
-    top:0%;
-    width: 100%;
-    z-index: 1000;
-}
-
-.navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-evenly;
-    
-}
-
-.navbar li {
-    display: inline;
-    justify-content: space-evenly;
-}
-
-.navbar a {
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    font-family: Arial, sans-serif;
-    padding: 8px 12px;
-    justify-content: space-evenly;
-}
-
-
-.navbar a:hover {
-    background-color: #1B4332;
-    border-radius: 15px;
-    transition: 1s;
-} 
-body{
-    background-color: white;
-}
-h1{
-     text-align:center;
-    font-size:42px;
-    color:#1E2938;
-    margin-top:100px;
-    margin-bottom:20px;
-}
-h1::after{
-    content:"";
-    width:90px;
-    height:4px;
-    background:#1E2938;
-    display:block;
-    margin:12px auto;
-    border-radius:10px;
-
-}
-p{
-    font-family: 'Times New Roman', Times, serif;
-    color: #1E2938;
-    font-size: 25px;
-     color:#1E2938;
-     font-weight: 100;
-     text-align: center;
-}
-
-.footer{
-    background:#1B4332;
-    color: white;
-    text-align: center;
-    padding: 40px 20px;
-    margin-top: 60px;
-    width: 100%;
-}
-
-.footer h3{
-    font-size: 28px;
-    margin-bottom: 10px;
-}
-
-.footer p{
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 20px;
-    color: white;
-}
-
-.footer-links{
-    margin-bottom: 20px;
-}
-
-.footer-links a{
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 17px;
-    transition: 0.3s;
-}
-
-.footer-links a:hover{
-    color: #FFD166;
-}
-
-.copyright{
-    border-top: 1px solid rgba(255,255,255,0.3);
-    padding-top: 15px;
-    font-size: 14px;
-}
-.skills{
-    max-width:1100px;
-    margin:50px auto;
-    padding:20px;
-}
-.slider{
-    width:100%;
-    max-width:1100px;
-    height:500px;
-    margin:100px auto 50px;
-    overflow:hidden;
-    border-radius:18px;
-    box-shadow:0 10px 30px rgba(0,0,0,.25);
-}
-
-/* Images */
-.slider figure{
-    position:relative;
-    width:400%;
-    height:100%;
-    margin:0;
-    left:0;
-    display:flex;
-    animation:slide 20s infinite;
-}
-
-/* Individual Image */
-.slider img{
-    width:25%;
-    height:100%;
-
-    /* Shows the whole image */
-    object-fit:contain;
-
-    /* Green background around images if needed */
-    background:#f2fff2;
-
-    flex-shrink:0;
-}
-
-/* Animation */
-@keyframes slide{
-
-    0%,20%{
-        left:0;
-    }
-
-    25%,45%{
-        left:-100%;
-    }
-
-    50%,70%{
-        left:-200%;
-    }
-
-    75%,95%{
-        left:-300%;
-    }
-
-    100%{
-        left:0;
-    }
-}
-
-/* Mobile */
-@media(max-width:768px){
-
-    .slider{
-        height:250px;
-    }
-
-}
 .intro{
     text-align:center;
     font-size:18px;
@@ -373,4 +65,222 @@ p{
     padding:25px;
     border-radius:15px;
     border-left:6px solid #28a745;
+}
+/* ===========================
+   EXTRA LARGE DEVICES (1400px and below)
+=========================== */
+
+@media (max-width:1400px){
+
+    .container{
+        width:90%;
+        margin:auto;
+    }
+
+}
+
+
+/* ===========================
+   LARGE LAPTOPS (1200px and below)
+=========================== */
+
+@media (max-width:1200px){
+
+    .container{
+        width:92%;
+    }
+
+}
+
+
+/* ===========================
+   TABLETS (992px and below)
+=========================== */
+
+@media (max-width:992px){
+
+    body{
+        overflow-x:hidden;
+    }
+
+    nav{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    section{
+        padding:60px 25px;
+    }
+
+    h1{
+        font-size:2.5rem;
+    }
+
+    h2{
+        font-size:2rem;
+    }
+
+    p{
+        font-size:1rem;
+    }
+
+}
+
+
+/* ===========================
+   SMALL TABLETS (768px and below)
+=========================== */
+
+@media (max-width:768px){
+
+    body{
+        overflow-x:hidden;
+    }
+
+    .container{
+        width:95%;
+        margin:auto;
+    }
+
+    section{
+        padding:50px 20px;
+    }
+
+    img,
+    video{
+        max-width:100%;
+        height:auto;
+        display:block;
+    }
+
+    h1{
+        font-size:2rem;
+        text-align:center;
+    }
+
+    h2{
+        font-size:1.6rem;
+        text-align:center;
+    }
+
+    h3{
+        text-align:center;
+    }
+
+    p{
+        font-size:1rem;
+        text-align:center;
+    }
+
+    button{
+        width:100%;
+    }
+
+    input,
+    textarea,
+    select{
+        width:100%;
+        box-sizing:border-box;
+    }
+
+    form{
+        width:100%;
+    }
+
+    footer{
+        padding:30px 20px;
+        text-align:center;
+    }
+
+    footer p{
+        font-size:15px;
+    }
+
+    footer a{
+        display:block;
+        margin:10px 0;
+    }
+
+    .social-icons{
+        display:flex;
+        justify-content:center;
+        gap:15px;
+        flex-wrap:wrap;
+    }
+
+}
+
+
+/* ===========================
+   MOBILE PHONES (576px and below)
+=========================== */
+
+@media (max-width:576px){
+
+    body{
+        overflow-x:hidden;
+    }
+
+    h1{
+        font-size:1.8rem;
+    }
+
+    h2{
+        font-size:1.4rem;
+    }
+
+    h3{
+        font-size:1.2rem;
+    }
+
+    p{
+        font-size:0.95rem;
+    }
+
+    img,
+    video{
+        width:100%;
+        height:auto;
+    }
+
+    button{
+        width:100%;
+        padding:12px;
+    }
+
+    input,
+    textarea,
+    select{
+        width:100%;
+    }
+
+    footer{
+        padding:20px 15px;
+    }
+
+}
+
+
+/* ===========================
+   VERY SMALL PHONES (400px and below)
+=========================== */
+
+@media (max-width:400px){
+
+    h1{
+        font-size:1.5rem;
+    }
+
+    h2{
+        font-size:1.2rem;
+    }
+
+    p{
+        font-size:0.9rem;
+    }
+
+    button{
+        font-size:14px;
+    }
+
 }
