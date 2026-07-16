@@ -566,52 +566,8 @@ form button:hover{
     }
 
 }
-/* ==========================
-   MOBILE FIX FOR SERVICES PAGE
-========================== */
 
-@media (max-width:768px){
 
-    .service-title{
-        margin-top:140px;
-        font-size:30px;
-    }
-
-    .service-intro{
-        margin-top:20px;
-        padding:0 15px;
-        font-size:16px;
-        text-align:center;
-    }
-
-}
-
-@media (max-width:576px){
-
-    .service-title{
-        margin-top:160px;
-        font-size:26px;
-    }
-
-    .service-intro{
-        font-size:15px;
-        padding:0 12px;
-    }
-
-}
-
-@media (max-width:400px){
-
-    .service-title{
-        margin-top:170px;
-        font-size:22px;
-    }
-
-    .service-intro{
-        font-size:14px;
-    }
-
-}
 /* ==========================
    MOBILE NAVBAR (HORIZONTAL)
 ========================== */
