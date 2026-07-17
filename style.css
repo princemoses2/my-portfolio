@@ -188,12 +188,12 @@ footer p{
 
 .h-two{
     color: white;
+     font-size: 28px;
 }
 .pm{
  font-family: 'Times New Roman', Times, serif;
     color:white;
-    font-size: 25px;
-     font-weight: 100;
+    font-size: 17px;
 }
 .p-sec{
     display: grid;
