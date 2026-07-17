@@ -172,6 +172,7 @@ margin-left: 170px;
 margin-right: 0px;
 margin-top: 50px;
 }
+
 .h-two{
     color: white;
 }
@@ -222,28 +223,37 @@ margin-top: 50px;
 }
 /* ==========================================
    RESPONSIVE MEDIA QUERIES
-   Place this at the VERY END of style.css
+   Place at the END of your CSS file
 ========================================== */
 
-/* Large Laptops */
-@media (max-width:1200px){
+/* ===========================
+   EXTRA LARGE DEVICES (1400px and below)
+=========================== */
 
-    .profile-pic{
-        width:260px;
-        height:260px;
-        right:20px;
-    }
+@media (max-width:1400px){
 
-    .vid1,
-    .vid2{
-        margin:40px auto;
-        display:block;
+    .p-sec{
+        width:90%;
     }
 
 }
 
+/* ===========================
+   LARGE LAPTOPS (1200px and below)
+=========================== */
 
-/* Tablets */
+@media (max-width:1200px){
+
+    .p-sec{
+        width:95%;
+    }
+
+}
+
+/* ===========================
+   TABLETS (992px and below)
+=========================== */
+
 @media (max-width:992px){
 
     body{
@@ -255,260 +265,80 @@ margin-top: 50px;
     }
 
     .navbar ul{
+        display:flex;
+        justify-content:space-evenly;
+        align-items:center;
         flex-wrap:wrap;
-        gap:15px;
+        gap:10px;
+    }
+
+    .navbar li{
+        display:inline-block;
     }
 
     .navbar a{
-        font-size:18px;
+        font-size:17px;
+        padding:6px 8px;
     }
 
-    .h-p,
-    .h-n{
+    .h-p{
+        margin-top:130px;
         font-size:36px;
         padding-left:0;
     }
 
+    .h-n{
+        font-size:34px;
+    }
+
     p{
-        font-size:24px;
+        font-size:22px;
         padding-left:20px;
+        padding-right:20px;
     }
 
     .profile-pic{
-        width:240px;
-        height:240px;
-        top:420px;
-        right:20px;
+        width:250px;
+        height:250px;
+        position:static;
+        display:block;
+        margin:30px auto;
+    }
+
+    .p-sec{
+        width:95%;
+    }
+
+    .p-sec p{
+        font-size:22px;
     }
 
     .vid1,
     .vid2{
-        width:90%;
-        margin:30px auto;
-        display:block;
+        width:45%;
+        margin:20px auto;
     }
 
-    .p-sec{
-        grid-template-columns:1fr;
+    footer{
+        padding:35px 20px;
     }
 
-    .p-sec p:nth-child(3){
-        grid-column:auto;
+    footer h2{
+        font-size:26px;
     }
 
 }
 
+/* ===========================
+   SMALL TABLETS (768px and below)
+=========================== */
 
-/* Small Tablets */
 @media (max-width:768px){
 
     body{
         overflow-x:hidden;
+        padding-top:90px;
     }
-
-    .navbar{
-        padding:15px;
-    }
-
-    .navbar ul{
-        flex-direction:column;
-        align-items:center;
-        gap:12px;
-    }
-
-    .navbar li{
-        display:block;
-    }
-
-    .navbar a{
-        display:block;
-        font-size:18px;
-    }
-
-    .h-p,
-    .h-n{
-        font-size:30px;
-        padding-left:0;
-    }
-
-    p{
-        font-size:20px;
-        padding-left:10px;
-        padding-right:10px;
-        text-align:center;
-    }
-
-    .profile-pic{
-        position:static;
-        display:block;
-        margin:30px auto;
-        width:220px;
-        height:220px;
-    }
-
-    .button-container{
-        padding:0 20px;
-    }
-
-    .view-btn{
-        width:100%;
-        font-size:18px;
-    }
-
-    .vid1,
-    .vid2{
-        width:100%;
-        max-width:500px;
-        margin:20px auto;
-        display:block;
-    }
-
-    .p-sec{
-        grid-template-columns:1fr;
-        padding:15px;
-    }
-
-    .p-sec p{
-        font-size:22px;
-    }
-
-    .p-sec p:nth-child(3){
-        grid-column:auto;
-    }
-
-    footer{
-        padding:30px 15px;
-    }
-
-    footer h2{
-        font-size:24px;
-    }
-
-    footer p{
-        font-size:16px;
-        padding:0;
-    }
-
-    .social-links{
-        display:flex;
-        justify-content:center;
-        flex-wrap:wrap;
-        gap:15px;
-    }
-
-    .social-links a{
-        margin:0;
-    }
-
-}
-
-
-/* Mobile Phones */
-@media (max-width:576px){
-
-    .navbar{
-        padding:12px;
-    }
-
-    .navbar a{
-        font-size:16px;
-    }
-
-    .h-p,
-    .h-n{
-        font-size:26px;
-    }
-
-    p{
-        font-size:18px;
-        padding:10px;
-    }
-
-    .profile-pic{
-        width:180px;
-        height:180px;
-    }
-
-    .view-btn{
-        width:100%;
-        font-size:16px;
-        padding:12px;
-    }
-
-    .vid1,
-    .vid2{
-        width:100%;
-        margin:20px auto;
-    }
-
-    .p-sec{
-        padding:10px;
-    }
-
-    .p-sec p{
-        font-size:18px;
-        text-align:center;
-    }
-
-    footer{
-        padding:20px 10px;
-    }
-
-    footer h2{
-        font-size:22px;
-    }
-
-    footer p{
-        font-size:15px;
-    }
-
-}
-
-
-/* Very Small Phones */
-@media (max-width:400px){
-
-    .navbar a{
-        font-size:15px;
-    }
-
-    .h-p,
-    .h-n{
-        font-size:22px;
-    }
-
-    p{
-        font-size:16px;
-    }
-
-    .profile-pic{
-        width:150px;
-        height:150px;
-    }
-
-    .view-btn{
-        font-size:15px;
-    }
-
-    .p-sec p{
-        font-size:16px;
-    }
-
-    footer h2{
-        font-size:20px;
-    }
-
-    footer p{
-        font-size:14px;
-    }
-
-}
-
-/* ==========================
-   MOBILE NAVBAR (HORIZONTAL)
-========================== */
-
-@media (max-width:768px){
 
     .navbar{
         padding:15px 8px;
@@ -533,7 +363,90 @@ margin-top: 50px;
         white-space:nowrap;
     }
 
+    .h-p{
+        margin-top:40px;
+        font-size:30px;
+        padding-left:0;
+    }
+
+    .h-n{
+        font-size:28px;
+    }
+
+    p{
+        font-size:18px;
+        text-align:center;
+        padding:0 10px;
+    }
+
+    .profile-pic{
+        width:220px;
+        height:220px;
+        position:static;
+        display:block;
+        margin:25px auto;
+    }
+
+    .p-sec{
+        grid-template-columns:1fr;
+        width:95%;
+        gap:20px;
+    }
+
+    .p-sec p{
+        font-size:18px;
+        text-align:center;
+    }
+
+    .p-sec p:nth-child(3){
+        grid-column:auto;
+    }
+
+    .vid1,
+    .vid2{
+        width:100%;
+        height:auto;
+        margin:20px auto;
+        display:block;
+    }
+
+    .button-container{
+        width:100%;
+    }
+
+    .view-btn{
+        width:100%;
+        font-size:17px;
+    }
+
+    footer{
+        padding:30px 15px;
+    }
+
+    footer h2{
+        font-size:24px;
+    }
+
+    footer p{
+        font-size:15px;
+    }
+
+    .social-links{
+        display:flex;
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .social-links a{
+        display:block;
+        margin:0;
+    }
+
 }
+
+/* ===========================
+   MOBILE PHONES (576px and below)
+=========================== */
 
 @media (max-width:576px){
 
@@ -550,13 +463,101 @@ margin-top: 50px;
         padding:5px 6px;
     }
 
+    .h-p{
+        font-size:26px;
+    }
+
+    .h-n{
+        font-size:22px;
+    }
+
+    p{
+        font-size:16px;
+    }
+
+    .profile-pic{
+        width:180px;
+        height:180px;
+    }
+
+    .p-sec{
+        width:98%;
+    }
+
+    .p-sec p{
+        font-size:16px;
+    }
+
+    .view-btn{
+        width:100%;
+        padding:12px;
+        font-size:16px;
+    }
+
+    footer{
+        padding:25px 10px;
+    }
+
+    footer h2{
+        font-size:22px;
+    }
+
+    footer p{
+        font-size:14px;
+    }
+
+    .copyright{
+        font-size:13px;
+    }
+
 }
+
+/* ===========================
+   VERY SMALL PHONES (400px and below)
+=========================== */
 
 @media (max-width:400px){
 
     .navbar a{
         font-size:11px;
-        padding:4px 4px;
+        padding:4px;
+    }
+
+    .h-p{
+        font-size:22px;
+    }
+
+    .h-n{
+        font-size:18px;
+    }
+
+    p{
+        font-size:15px;
+    }
+
+    .profile-pic{
+        width:150px;
+        height:150px;
+    }
+
+    .p-sec p{
+        font-size:14px;
+    }
+
+    .view-btn{
+        font-size:15px;
+    }
+
+    footer h2{
+        font-size:20px;
+    }
+
+    footer p{
+        font-size:13px;
+    }
+
+    .copyright{
+        font-size:12px;
     }
 
 }
