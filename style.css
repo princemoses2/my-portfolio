@@ -110,6 +110,8 @@ p{ background: white;
   transform: scale(1.05);
 
 }
+/* ===== FOOTER FIX ===== */
+
 footer{
     background:#1B4332;
     color:white;
@@ -119,21 +121,29 @@ footer{
     width:100%;
 }
 
-footer h2{
-    font-size:28px;
-    margin-bottom:10px;
-}
-
+/* Remove the white paragraph boxes inside footer */
 footer p{
-    margin:0 0 20px;
-    padding-left:0;
-    font-size:16px;
-    line-height:1.6;
-    color:white;
+    background:transparent !important;
+    box-shadow:none !important;
+    border:none !important;
+    padding:8px 0 !important;
+    margin:0 !important;
+    color:white !important;
+    font-size:17px !important;
+    text-align:center !important;
+    line-height:1.6 !important;
 }
 
+/* Footer heading */
+footer h2{
+    color:white !important;
+    font-size:28px;
+    margin-bottom:15px;
+}
+
+/* Social links */
 .social-links{
-    margin-bottom:20px;
+    margin:20px 0;
 }
 
 .social-links a{
@@ -149,12 +159,13 @@ footer p{
     color:#FFD166;
 }
 
+/* Copyright */
 .copyright{
     border-top:1px solid rgba(255,255,255,0.3);
-    padding-top:15px;
-    margin-top:15px;
-    font-size:14px;
-    color:white;
+    padding-top:15px !important;
+    margin-top:15px !important;
+    font-size:14px !important;
+    color:white !important;
 }
 
 .button-container{
