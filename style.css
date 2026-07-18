@@ -75,12 +75,19 @@ body{
     border-radius:10px;
 
 }
-p{   padding-left: 40px;
-     font-family: 'Times New Roman', Times, serif;
+p{ background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
     color: #1E2938;
     font-size: 28px;
-     color:#1E2938;
-     font-weight: 100;
+    line-height: 1.8;
+    text-align: justify;
+    transition: all 0.4s ease;
+    border-top: 5px solid transparent;
+    cursor: pointer;
 }
 
 .profile-pic {
